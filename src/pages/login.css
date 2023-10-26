@@ -1,12 +1,21 @@
 *{
     font-family: 'Source Sans Pro';
 }
-.home-view {
+
+.login-page {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 90vh;
     background-color: #f4f4f4;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; 
+    z-index: 1001;
 }
 
 .tittle{
@@ -37,14 +46,14 @@
     
 }
 
-.formContainer {
+.form-container {
     
     font-size: 43px;
     margin-bottom: 20px;
     
 }
 
-.informationText{
+.information-text{
     background-color: #fff8eb;
     color: #9d6309;
     display: flex;
@@ -55,12 +64,12 @@
     font-size: 25px;
 }
 
-.form_Container2 {
+.form-container-2 {
     font-size: 20px;
     margin-left:0;
 }
 
-.emailText,
+.email-container,
 .passwordText {
     font-size: 25px;
     margin: 14px 0;
@@ -115,21 +124,21 @@ input[type="password"]:hover {
 }
 
 .top {
-    background-color: #00E6DC; /* Celeste */
+    background-color: #00E6DC;
     position: relative;
     top: 0;
     left: 50%;
     width: 100vw;
     height: 100vh;
+    z-index: 1000; /* Asegura que los elementos superiores estén detrás del encabezado */
 }
 
 .bottom {
-    background-color: #000028; /* Azul marino */
+    background-color: #000028;
     position: absolute;
     bottom: 0;
     left: 50%;
     position: relative;
     width: 100vw;
     height: 110vh;
-    
 }
