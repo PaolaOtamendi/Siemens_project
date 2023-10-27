@@ -1,0 +1,144 @@
+*{
+    font-family: 'Source Sans Pro';
+}
+
+.login-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    background-color: #f4f4f4;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; 
+    z-index: 1001;
+}
+
+.tittle{
+    color: black;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 36px;
+    text-align: center;
+    
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 50px;
+    padding-left: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 30%;
+    line-height: 1.42857143;
+    position:absolute;
+    margin-left: 20%; 
+    
+}
+
+.form-container {
+    
+    font-size: 43px;
+    margin-bottom: 20px;
+    
+}
+
+.information-text{
+    background-color: #fff8eb;
+    color: #9d6309;
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    width: 100%;
+    overflow: anywhere;
+    font-size: 25px;
+}
+
+.form-container-2 {
+    font-size: 20px;
+    margin-left:0;
+}
+
+.email-container,
+.passwordText {
+    font-size: 25px;
+    margin: 14px 0;
+    
+}
+
+input[type="email"],
+input[type="password"] {
+    
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border:none;
+    border-radius: 4px;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border: 2px solid #00E6DC; /* Color de borde celeste en hover */
+}
+
+
+.submitBotton, .googleBotton {
+    background: linear-gradient(to right, #00FFB9, #00E6DC 100%);
+    color: #000028;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid #000028;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.finalText{
+    font-size: 20px;
+    color:#007993;
+    cursor: pointer;
+}
+
+
+
+.p_image{
+    position: absolute;
+    top: 20px; /* Ajusta la posición vertical según tu diseño */
+    left: 20px; /* Ajusta la posición horizontal según tu diseño */
+    z-index: 1; 
+    height: 40%;
+    margin-left: 65%;
+    margin-top: -10px;
+}
+
+.top {
+    background-color: #00E6DC;
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; /* Asegura que los elementos superiores estén detrás del encabezado */
+}
+
+.bottom {
+    background-color: #000028;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    position: relative;
+    width: 100vw;
+    height: 110vh;
+}
