@@ -11,18 +11,17 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 90vh;
+/*     height: 90vh; */
     background-color: #f4f4f4;
 }
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     background-color: #fff; 
 /*     z-index: 1001; */
 }
-
 
 .container-sesion {
     display: flex;
@@ -33,36 +32,55 @@ body {
 }
 
 .intro {
-    background-color: #ffe6b7;
+    display: flex;
+    background-color: #f8ead1;
     width: 400px;
     margin-right: 20px;
     margin-left: 20px;
     padding: 10px;
+    border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+    margin: 10px;
+    margin-top: 60px;
+}
+
+.text {
+    margin-right: 10px;
+    color: #a2790f;
 }
 
 .titlesesion {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
+    font-size: 40px;
+    text-align: center;
 }
 
 .container-image {
-    margin-top: 350px;
+    margin-top: 400px;
     flex-direction: crow;
     flex-direction: column;
     width: 900px;
-    height: 500px;
+    height: 900px;
     background-color: #000028;
 }
 
 .image {
     width: 800px;
     height: auto;
-    margin-top: -175px;
+    margin-top: -700px;
 }
+
+.container-email, .container-password {
+    margin: 20px;
+}
+
 
 .input-label {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 input[type="email"],
@@ -80,22 +98,60 @@ input[type="password"]:hover {
   border: 2px solid #00E6DC; /* Color de borde celeste en hover */
 }
 
-.final-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color:#007993;
-    cursor: pointer;
-}
-
 .submitBotton {
-    background: linear-gradient(to right, #00FFB9, #00E6DC 100%);
-    color: #000028;
-    padding: 10px 20px;
+    background:#81f6f0;
+    padding: 5px 10px;
     width: 100%;
-    font-size: 20px;
+    font-size: 13px;
+    color:#014251;
     border: 2px solid #000028;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
     letter-spacing: 1px;
+}
+
+.submitBottonGoogle {
+    background:#e6e8e7;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 13px;
+    color:#014251;
+    border: 2px solid #000028;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.selected {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 15px;
+    width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#opcion1, #opcion2 {
+    margin: 10px;
+}
+
+.politica-privacidad {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.final-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#007993;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 25px;
+    text-align: center;
 }
