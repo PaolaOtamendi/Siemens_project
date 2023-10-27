@@ -1,5 +1,6 @@
 import './home.css';
 import Header from '../components/Header';
+import Chat from '../components/chat';
 
 const Home = () => {
   return (
@@ -32,6 +33,9 @@ const Home = () => {
           <button className="go-button">Buscar</button>
         </div>
 
+      <div>
+        <Chat></Chat>
+      </div>
       </body>
     </section>
 

@@ -29,10 +29,7 @@ const Header = () => {
             alt="eightfold-logo"
           ></img>
         </a>
-        <a
-          className="letreroInicio" onClick={handleLogout}
-          /* href="https://jobs.siemens.com/candidate/login?domain=siemens.com&hl=es&microsite=siemens.com&utm_source=bing&next=https%3A%2F%2Fjobs.siemens.com%2Fcareerhub%2Fme%3Faction%3Dedit%26profile_type%3Dcandidate%26domain%3Dsiemens.com%26customredirect%3D1%26utm_source%3Dbing%26ste_sid%3D024741e2ed95c5cdd15f6fb3d595738d" */
-        >
+        <a className="letreroInicio" onClick={handleLogout}>
           Salir
         </a>
         <span className="letreroIdioma">Español</span>

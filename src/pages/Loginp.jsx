@@ -1,9 +1,6 @@
 import people from "../assets/people.png";
 import "./loginp.css";
 import Header from "../components/Header";
-/* import { useHistory } from 'react-router-dom';
-import { auth } from "../app/firebase"; */
-/* import { signInWithGoogle } from "../servicios/registroGoogle"; */
 import { getAuth, signInWithPopup } from 'firebase/auth';
 import { provider } from "../app/firebase";
 
