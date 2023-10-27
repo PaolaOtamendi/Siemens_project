@@ -15,7 +15,7 @@ const Login2 = () => {
         const user = result.user;
         console.log("Usuario autenticado:", user);
         // Realiza la redirección manual
-        window.location.href = "/Home";
+        window.location.href = "/";
       })
       .catch((error) => {
         console.error("Error al iniciar sesión con Google:", error);
