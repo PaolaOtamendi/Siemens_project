@@ -8,7 +8,7 @@ const Header = () => {
     signOut(auth)
     .then(() => {
       console.log('Usuario desconectado con éxito');
-      window.location.href = '/Login';
+      window.location.href = '/login';
     })
     .catch((error) => {
       // Maneja cualquier error que ocurra durante el cierre de sesión
