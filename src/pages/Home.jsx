@@ -1,6 +1,7 @@
 import './home.css';
 import Header from '../components/Header';
 import Chat from '../components/chat';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -33,9 +34,34 @@ const Home = () => {
           <button className="go-button">Buscar</button>
         </div>
 
+      <div className='div-vacante'>
+        <p className='titulo-vacante'>Desarrollador Web Frontend</p>
+        <p><strong>Descripción del puesto:</strong> Buscamos un desarrollador web frontend creativo y apasionado para unirse a nuestro equipo. Deberás trabajar en la creación de interfaces de usuario atractivas y funcionales utilizando tecnologías como HTML, CSS y JavaScript.</p>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Diseño de interfaz de usuario</p>
+        <p><strong>Experiencia:</strong> Profesional Junior</p>
+        <p><strong>Modalidad:</strong>Híbrido (Remoto/Oficina)</p>
+        <p><strong>País:</strong> México</p>
+      </div>
+
+      <div className='contenedor-video'>
+        <p>Videos Recomendados</p>
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/wyVRozRIAP0"
+          title="Título del video"
+          allowfullscreen
+        />
+      </div>
+
+      <div>
+        <Footer></Footer>
+      </div>
+
       <div>
         <Chat></Chat>
       </div>
+
       </body>
     </section>
 

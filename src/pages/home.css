@@ -1,3 +1,7 @@
+.home{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .boxHeader {
     background-color: #000028;
     height: 80px;
@@ -34,7 +38,7 @@
     padding: 0px 0px 0px 16px;
     font-size: 50px;
     font-weight: 6000;
-    width: 450px;
+    width: 500px;
     padding-left: 60px;
     padding-top: 25px;
 }
@@ -59,6 +63,7 @@
 
 .buscadores {
     display: flex;
+    margin-left: 20px;
 }
 
 .inputBuscar {
@@ -99,4 +104,41 @@
     margin: 0px 10px 0px 0px;
     padding: 0px 10px;
     margin-left: 10px;
+}
+
+/* vacante--------------------------- */
+.div-vacante{
+    width: 70%;
+    margin: 50px 0px 0px 100px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333353;
+}
+
+.titulo-vacante{
+    font-size: xx-large;
+}
+
+/* video--------------------------- */
+.contenedor-video{
+    margin: 50px 0px 50px 350px ;
+    color: #333353;
+    font-size: x-large;
+   
+}
+
+/* footer--------------------------- */
+.footer-container {
+    background: #ebf0f5;
+    border-top: 2px solid #fff;
+    padding: 25px;
+    color: #697882;
+}
+
+.link-container{
+display: flex;
+justify-content: space-between;
+}
+
+.links{
+    margin-left: 15px;
 }
