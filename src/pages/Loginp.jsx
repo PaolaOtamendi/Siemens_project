@@ -1,8 +1,28 @@
 import people from "../assets/people.png";
 import "./loginp.css";
 import Header from "../components/Header";
+import { getAuth, signInWithPopup } from 'firebase/auth';
+import { provider } from "../app/firebase";
+
 
 const Login2 = () => {
+
+  const auth = getAuth();
+
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, provider)
+    .then((result) => {
+      // El usuario ha iniciado sesión con Google.
+      const user = result.user;
+      console.log('Usuario autenticado:', user);
+      // Realiza la redirección manual
+      window.location.href = '/Home';
+    })
+    .catch((error) => {
+      console.error('Error al iniciar sesión con Google:', error);
+    });
+  };
+  
   return (
     <section className="Login-page2">
       <header className="header">
@@ -19,7 +39,9 @@ const Login2 = () => {
             seguimiento de tus solicitudes pasadas, puedes seguir entrando con
             tus credenciales anteriores
             <br></br>
-            <a href='https://talent.siemens.com/es_ES/myapplications'>https://talent.siemens.com/es_ES/myapplications</a>
+            <a href="https://talent.siemens.com/es_ES/myapplications">
+              https://talent.siemens.com/es_ES/myapplications
+            </a>
           </p>
         </div>
         <div className="container-inputs">
@@ -31,8 +53,8 @@ const Login2 = () => {
             <label className="input-label">Contraseña</label>
             <input type="password" id="password" />
           </div>
-          <div className="finalText">
-            <p>Olvidaste la contraseña?</p>
+          <div className="final-text">
+            <p>¿Olvidaste la contraseña?</p>
           </div>
           <div className="buttonsopen">
             <button className="submitBotton" type="submit">
@@ -40,12 +62,13 @@ const Login2 = () => {
             </button>
           </div>
           <div className="buttonsopen">
-            <button className="submitBotton" type="submit">
+            <button className="submitBotton" type="submit" onClick={handleGoogleSignIn}>
               Inicia con Google
             </button>
           </div>
-          <div className="finalText">
-            <href>Necesitar una cuenta? Registrar</href>
+          <br></br>
+          <div className="final-text">
+            <a>Necesitas una cuenta? Registrar</a>
           </div>
         </div>
       </div>
