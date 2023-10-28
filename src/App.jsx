@@ -6,8 +6,9 @@ import Loginp from "./pages/Loginp";
 const App = () => {
   return(
     <Routes>
-    <Route element={<Home />} path="/Home" />
-    <Route element={<Loginp />} path="/Login" />
+    <Route element={<Home />} path="/" />
+    <Route element={<Home />} path="/home" />
+    <Route element={<Loginp />} path="/login" />
     </Routes>
   )
 }
