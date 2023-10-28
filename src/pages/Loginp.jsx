@@ -1,7 +1,7 @@
 import people from "../assets/people.png";
 import "./loginp.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 import { getAuth, signInWithPopup } from "firebase/auth";
 import { provider } from "../app/firebase";
 
@@ -15,7 +15,7 @@ const Login2 = () => {
         const user = result.user;
         console.log("Usuario autenticado:", user);
         // Realiza la redirección manual
-        window.location.href = "/home";
+        window.location.href = "/";
       })
       .catch((error) => {
         console.error("Error al iniciar sesión con Google:", error);
