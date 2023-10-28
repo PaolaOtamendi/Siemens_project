@@ -1,7 +1,7 @@
 import './home.css';
-import Header from '../components/Header';
-import Chat from '../components/chat';
-import Footer from '../components/Footer';
+import Header from '../components/Header.jsx';
+import Chat from '../components/Chat.jsx';
+import Footer from '../components/Footer.jsx';
 
 const Home = () => {
   return (
