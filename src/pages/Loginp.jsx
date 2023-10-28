@@ -5,24 +5,33 @@ import Footer from "../components/Footer.jsx";
 import { getAuth, signInWithPopup } from "firebase/auth";
 import { provider } from "../app/firebase";
 import { useNavigate } from 'react-router-dom';
+import { loginWithGoogle } from "../app/googleAuth";
 
 const Login = () => {
-  const auth = getAuth();
   const navigateTo = useNavigate();
 
-  const handleGoogleSignIn = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // El usuario ha iniciado sesión con Google.
-        const user = result.user;
-        console.log("Usuario autenticado:", user);
-        // Realiza la redirección manual
-        navigateTo('/');
+  // const handleGoogleSignIn = () => {
+  //   signInWithPopup(auth, provider)
+  //     .then((result) => {
+  //       // El usuario ha iniciado sesión con Google.
+  //       const user = result.user;
+  //       console.log("Usuario autenticado:", user);
+  //       // Realiza la redirección manual
+  //       navigateTo('/');
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error al iniciar sesión con Google:", error);
+  //     });
+  // };
+  const handleGoogleSignIn = (event) => {
+    event.preventDefault();
+    loginWithGoogle()
+      .then((loginSuccessful) => {
+        if (loginSuccessful) {
+          navigateTo('/')
+        }
       })
-      .catch((error) => {
-        console.error("Error al iniciar sesión con Google:", error);
-      });
-  };
+  }
 
   return (
     <section className="containerall">
