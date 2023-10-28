@@ -5,7 +5,7 @@ import Footer from "../components/Footer.jsx";
 import { getAuth, signInWithPopup } from "firebase/auth";
 import { provider } from "../app/firebase";
 
-const Login2 = () => {
+const Login = () => {
   const auth = getAuth();
 
   const handleGoogleSignIn = () => {
@@ -121,4 +121,4 @@ const Login2 = () => {
   );
 };
 
-export default Login2;
+export default Login;

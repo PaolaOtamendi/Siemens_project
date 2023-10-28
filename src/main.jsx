@@ -7,7 +7,7 @@ import {
   RouterProvider 
 } from 'react-router-dom'
 import Home from'./pages/Home.jsx'
-import Login2 from './pages/Loginp.jsx'
+import Login from './pages/Loginp.jsx'
 import './index.css'
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
@@ -24,12 +24,12 @@ const router = createBrowserRouter([
     element: <Home/>,
   },
   {
-    path: "/home",
+    path: "/home*",
     element: <Home/>,
   },
   {
-    path: "/login",
-    element: <Login2/>,
+    path: "/login*",
+    element: <Login/>,
   },
 ]);
 
