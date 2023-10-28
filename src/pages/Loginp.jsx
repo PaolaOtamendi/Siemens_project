@@ -4,9 +4,11 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { getAuth, signInWithPopup } from "firebase/auth";
 import { provider } from "../app/firebase";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const auth = getAuth();
+  const navigateTo = useNavigate();
 
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, provider)
@@ -15,7 +17,7 @@ const Login = () => {
         const user = result.user;
         console.log("Usuario autenticado:", user);
         // Realiza la redirección manual
-        window.location.href = "/";
+        navigateTo('/');
       })
       .catch((error) => {
         console.error("Error al iniciar sesión con Google:", error);

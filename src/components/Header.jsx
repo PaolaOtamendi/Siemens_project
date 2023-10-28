@@ -1,14 +1,16 @@
 import { getAuth, signOut } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
 
   const auth = getAuth();
+  const navigateTo = useNavigate();
 
   const handleLogout = () => {
     signOut(auth)
     .then(() => {
       console.log('Usuario desconectado con éxito');
-      window.location.href = '/login';
+      navigateTo('/login');
     })
     .catch((error) => {
       // Maneja cualquier error que ocurra durante el cierre de sesión
